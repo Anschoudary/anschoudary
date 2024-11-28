@@ -31,18 +31,21 @@ body {
     box-shadow: 0 4px 6px rgba(5, 5, 5, 0.3);
     z-index: 1000;
     backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out;
 }
 
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #77b6ea;
+    animation: slideInLeft 1s ease-in-out;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .nav-links a {
@@ -56,6 +59,7 @@ body {
     background: #77b6ea;
     color: #1e1e2f;
     border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Hamburger Menu */
@@ -75,33 +79,39 @@ body {
     text-align: center;
     padding: 1rem;
     color: #fff;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #77b6ea;
+    animation: zoomIn 1.5s ease-in-out;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    animation: fadeInUp 2s ease-in-out;
 }
 
 /* Section */
 section {
     padding: 4rem 2rem;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     color: #77b6ea;
+    animation: fadeInDown 1.5s ease-in-out;
 }
 
 span:hover {
     color: #77b6ea;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Experience Section */
@@ -113,6 +123,7 @@ span:hover {
     align-items: center;
     padding: 0 1rem;
     width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .exp-list {
@@ -126,6 +137,7 @@ span:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 100%;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .exp-card h3 {
@@ -147,6 +159,7 @@ span:hover {
     padding: 0;
     max-width: 600px;
     text-align: left;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .skills-list li {
@@ -162,6 +175,7 @@ span:hover {
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .project-card {
@@ -170,6 +184,7 @@ span:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     text-align: left;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 .project-card h3 {
@@ -182,7 +197,6 @@ span:hover {
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);  
     background: linear-gradient(135deg, #12121d, #41417a);
-
 }
 
 /* Footer */
@@ -194,10 +208,12 @@ span:hover {
     font-size: 0.9rem;
     color: #d6d6e0;
     backdrop-filter: blur(8px);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .email:hover {
     color: #77b6ea;
+    transition: color 0.3s ease-in-out;
 }
 
 /* Responsive Design */
@@ -236,5 +252,70 @@ span:hover {
 
     .hamburger {
         display: block;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
