@@ -114,6 +114,38 @@ span:hover {
     transition: color 0.3s ease-in-out;
 }
 
+/* Qualification Section */
+.qualification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.qualification-card {
+    background: rgba(45, 45, 60, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.qualification-card h3 {
+    color: #77b6ea;
+    margin-bottom: 0.5rem;
+}
+
+.qualification-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);  
+    background: linear-gradient(135deg, #12121d, #41417a);
+}
+
 /* Experience Section */
 .exp-grid {
     display: flex;
@@ -146,6 +178,38 @@ span:hover {
 }
 
 .exp-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);  
+    background: linear-gradient(135deg, #12121d, #41417a);
+}
+
+/* Certifications Section */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.certification-card {
+    background: rgba(45, 45, 60, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.certification-card h3 {
+    color: #77b6ea;
+    margin-bottom: 0.5rem;
+}
+
+.certification-card:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);  
