@@ -1,3 +1,3 @@
 # m-ans
 Personal Portfolio
-https://anschoudary.github.io/m-ans/
+https://anschoudary.github.io/ansmurtaza/
