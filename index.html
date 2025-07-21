@@ -4,231 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M Ans - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="background-glow"></div>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo"><a href=""> Muhammad Ans </a></div>
+        <div class="logo">
+            <a href="#">
+                <span>M. Ans</span>
+            </a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+        </div>
+
+        <div class="nav-actions">
+            <a href="https://github.com/Anschoudary" target="_blank" class="social-icon"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/AnsMurtaza" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+        </div>
+        
         <div id="hamburger" class="hamburger">
             <i class="fa fa-bars"></i>
         </div>
-        <ul id="nav-links" class="nav-links">
-            <li><a href="https://www.linkedin.com/in/AnsMurtaza" target="_blank"> <i class="fa fa-linkedin" style="font-size:24px"></i> </a></li>
-            <li><a href="https://github.com/Anschoudary/DocChat" target="_blank"> <i class="fa fa-github" style="font-size:24px"></i> </a></li>
+    </nav>
+    
+    <div id="mobile-nav-links" class="mobile-nav-links">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Muhammad Ans</h1>
-            <p>Hi, I'm  — ML Engineer | Computer Science Student | AI Enthusiast </p>
-        </div>
-    </header>
 
-    <div class="main">
+    <div class="main-container">
 
-    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Muhammad Ans</h1>
+                <p>Computer Vision Engineer</p>
+            </div>
+        </header>
+
         <!-- About Section -->
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p> Machine Learning Engineer consistently trying to learn new technologies </p>
-            <p>  to stay up to date with the emerging needs of development. </p>
-            <p> I have experience in building AI models for computer vision, NLP, and predictive analytics. </p>
-            <p> I’m also the creator of the Datai Python library for automating data preprocessing and visualization. </p>
+             <div class="card">
+                <h2>About Me</h2>
+                <p>Computer Vision Engineer consistently trying to learn new technologies to stay up to date with the emerging needs of development. I have experience in building AI models for computer vision, NLP, and predictive analytics. I’m also the creator of the Datai Python library for automating data preprocessing and visualization.</p>
+             </div>
         </section>
 
-        <!-- Datai Library Section -->
-        <section id="datai" class="section">
-            <a href="https://github.com/Anschoudary/datai" target="_blank"><h2>Datai Library</h2></a>
-            <p>
-                <a href="https://github.com/Anschoudary/datai" target="_blank"><strong> <span> Datai </span> </strong></a> is my Python library for automating data preprocessing and visualization. It includes:  
-            </p>
-            <p>=> Automatic data cleaning & pre-processing.</p>
-            <p>=> Auto data visualization.</p>
-            <p>Explore its features in the <a href="https://github.com/Anschoudary/datai" target="_blank"><strong> <span> documentation </span> </strong>.</a></p>
+        <!-- Python Library Section -->
+        <section id="python-library" class="section">
+            <h2 class="section-title">Datai</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="https://github.com/Anschoudary/Datai" target="_blank">
+                        <h3>Datai</h3>
+                        <p>A Python library for automating data preprocessing and visualization tasks. Automatic data cleaning & pre-processing. Auto data visualization. Explore its features in the documentation.</p>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid">
+                <div class="card">
                     <a href="https://github.com/Anschoudary/Attendance-System" target="_blank">
-                        <div class="project-body">
-                            <h3>Vision-based Attendance System</h3>
-                            <p>It is a complete flask based web-app that used <span>Computer Vision</span> to detect and mark attendance of specific people.</p>
-                        </div>
+                        <h3>Vision-based Attendance System</h3>
+                        <p>A complete Flask-based web-app that uses Computer Vision to detect and mark attendance of specific people.</p>
                     </a>
                 </div>
-                <div class="project-card">
+                <div class="card">
                     <a href="https://github.com/Anschoudary/DocChat" target="_blank">
-                        <div class="project-body">
-                            <h3>DocChat</h3>
-                            <p>A streamlit app to chat with your documents using Gemini.</p>
-                        </div>
+                        <h3>DocChat</h3>
+                        <p>A Streamlit app to chat with your documents using Gemini.</p>
                     </a>
                 </div>
-                <div class="project-card">
+                <div class="card">
                     <a href="https://github.com/Anschoudary/Emotion-Detection" target="_blank">
-                        <div class="project-body">
-                            <h3>Emotion Detection</h3>
-                            <p>Computer Vision model analyzing emotions from images.</p>
-                        </div>
+                        <h3>Emotion Detection</h3>
+                        <p>A Computer Vision model that analyzes emotions from images.</p>
                     </a>
                 </div>
-                <div class="project-card">
+                <div class="card">
                     <a href="https://github.com/Anschoudary/Machine-Learning/blob/main/M5_SVM.ipynb" target="_blank">
-                        <div class="project-body">
-                            <h3>Breast Cancer Prediction</h3>
-                            <p>Developed using SVM for early-stage cancer detection.</p>
-                        </div>
+                        <h3>Breast Cancer Prediction</h3>
+                        <p>Developed using SVM for early-stage cancer detection.</p>
                     </a>
                 </div>
-                <div class="project-card">
-                    <a href="https://github.com/Anschoudary/DeepLearning/blob/main/Recurrent_Neural_Network.ipynb" target="_blank">
-                        <div class="project-body">
-                            <h3>Sentence Classification</h3>
-                            <p>Built with NLP and RNN for real-time text insights.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/Anschoudary/Machine-Learning/blob/main/M7_1_Heart_Disease_Prediction.ipynb" target="_blank">
-                        <div class="project-body">
-                            <h3>Heart Disease Prediction</h3>
-                            <p>Implemented using Random Forest for health predictions.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/Anschoudary/DeepLearning/blob/main/Hand_Written_Digits_Recognition.ipynb" target="_blank">
-                        <div class="project-body">
-                            <h3>Handwritten Digits Classification</h3>
-                            <p>Implemented using Neural Networks.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card">
+                <div class="card">
                     <a href="https://github.com/Anschoudary/Sign_Language_Detection" target="_blank">
-                        <div class="project-body">
-                            <h3>Sign Language Detection</h3>
-                            <p>Implemented using a custom trained model of YOLO11 on ASL dataset.</p>
-                        </div>
+                        <h3>Sign Language Detection</h3>
+                        <p>A Computer Vision model that recognizes and translates sign language gestures.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/Anschoudary/qlearning" target="_blank">
+                        <h3>Q-Learning</h3>
+                        <p>A reinforcement learning model for shortest path navigation.</p>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <h3>Machine Learning & Deep Learning</h3>
-                    <p>NAVTTC - Pakistan</p>
-                    <p>Issued: May 2023</p>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>BS Computer Science</h3>
+                    <p><a href="https://www.mul.edu.pk/en/" target="_blank">Minhaj University Lahore</a> (2021 - 2025)</p>
                 </div>
-                <div class="certification-card">
-                    <h3>Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate</h3>
-                    <p>Oracle University</p>
-                    <p>Issued: February 2024</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Qualification Section -->
-        <section id="qualification" class="section">
-            <h2>Qualification</h2>
-            <div class="qualification-grid">
-                <div class="qualification-card">
-                    <h3><a href="https://www.mul.edu.pk/en/" target="_blank"> Minhaj University Lahore </a></h3>
-                    <p>BS Computer Science, Current (2021 - 2025)</p>
-                </div>
-                <div class="qualification-card">
-                    <h3>PIASS College Kasur</h3>
-                    <p>FSc. Pre-Engineering (2019 - 2021)</p>
+                 <div class="card">
+                    <h3>FSc. Pre-Engineering</h3>
+                    <p>PIASS College Kasur (2019 - 2021)</p>
                 </div>
             </div>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="experience">
-            <h2>Experience</h2>
-            <div class="exp-grid">
-                <div class="exp-list">
-                    <div class="exp-card">
-                        <h3>Python Developer</h3>
-                        <p>Python developer at <a href="https://tealspark.pk/" target="_blank"><strong> <span> Teal SPark </span> </strong></a> (July 2024 - Present)</p>
-                        <p>Python automation and data scraping.</p>
-                    </div>
-                    <br>
-                    <div class="exp-card">
-                        <h3>AI/ML Engineer</h3>
-                        <p>AI Developer at <strong> <span> Islame.org</span> </strong> (Nov 2023 - March 2024)</p>
-                        <p>Implemented Speech recocgnition models for speech analysis and finding the accuracy of audio.</p>
-                    </div>
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Python Developer</h3>
+                    <p><a href="https://tealspark.pk/" target="_blank">Teal Spark</a> (July 2024 - Mar 2025)</p>
+                    <p>Python automation and data scraping.</p>
                 </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Programming:</strong> Python, Django, flask, C++, SQL, Python Automation, Data Scraping</li>
-                <li><strong>AI Tools:</strong> Scikit-Learn, Tensorflow, OpenCV, NLP, YOLO, Roboflow</li>
-                <li><strong>Development Tools:</strong> Anaconda, Google Colab, Jupyter Notebook, Android Studio</li>
-            </ul>
-        </section>
-
-        <!-- Others Section -->
-        <section class="others" class="section">
-            <h2>Others</h2>
-            <div class="others-grid">
-                <div class="project-card" id="other-card">
-                    <a href="https://sites.google.com/view/knowyourtype/" target="_blank">
-                        <div class="project-body">
-                            <h3>Know Your Self</h3>
-                            <p><strong>KNOWING YOURSELF IS THE BEGINNING OF ALL WISDOM.</strong></p>
-                            <p>A website to let you know your personality type.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-card" id="other-card">
-                    <a href="https://www.instagram.com/owesome_nature/" target="_blank">
-                        <div class="project-body">
-                            <h3>Photography</h3>
-                            <p><strong>I LOVE NATURE, SO I CAPTURE IT.</strong></p>
-                            <p>I also do Photography as my hobby.Check out my Instagram</p>
-                        </div>
-                    </a>
+                <div class="card">
+                    <h3>AI/ML Engineer</h3>
+                    <p>Islame.org</p>
+                    <p>(Nov 2023 - March 2024)</p>
+                    <p>Implemented Speech recognition models for speech analysis.</p>
                 </div>
             </div>
         </section>
-    </div>
+
+        <!-- Skills & Certifications -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills & Certifications</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Skills</h3>
+                    <p><strong>Programming:</strong> Python, Django, Flask, C++, SQL</p>
+                    <p><strong>AI Tools:</strong> Scikit-Learn, Tensorflow, OpenCV, NLP, YOLO</p>
+                    <p><strong>Dev Tools:</strong> Anaconda, Google Colab, Git, Docker</p>
+                </div>
+                <div class="card">
+                    <h3>Certifications</h3>
+                     <p><strong>Machine Learning & Deep Learning</strong> - NAVTTC</p>
+                     <p><strong>Oracle Cloud AI Foundations Associate</strong> - Oracle</p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->
     <footer id="contact" class="footer">
         <h2>Contact Me</h2>
-        <p class="email"> <a href="mailto:M.ANS.CS@outlook.com"> <i style="font-size:24px" class="fa">&#xf0e0;</i> M.ANS.CS@outlook.com</a></p>
+        <p class="email"><a href="mailto:M.ANS.CS@outlook.com"><i class="fa fa-envelope"></i> M.ANS.CS@outlook.com</a></p>
         <br>
-        <p>&copy; 2024 Muhammad Ans. All rights reserved.</p>
+        <p>© 2024 Muhammad Ans. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript -->
     <script>
-        // Hamburger menu toggle
         const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
+        const mobileNavLinks = document.getElementById('mobile-nav-links');
 
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            mobileNavLinks.classList.toggle('active');
         });
-
     </script>
 
 </body>
